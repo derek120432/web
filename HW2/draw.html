@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body style="text-align:center;">
+    <div>
+        color:<input id="color" type="color">
+        <button onclick="changePenColor()">confirm color</button> <br>
+        </input>
+        粗細:
+        <select id="lineWidth">       
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>5</option>
+            <option>7</option>
+            <option>30</option>
+        </select>
+        <button onclick="changePenWidth()">confirm width</button>  
+        <button onclick="ctx.fillStyle = 'white'; ctx.fillRect(0, 0, canvas.width, canvas.height);">clear
+            img</button> <br>  
+    </div>
+    <canvas id="draw" width="800" height="600" style="border:2px solid gray">
+
+    <script src="drawAdvance.js"></script>
+</body>
+</html>
